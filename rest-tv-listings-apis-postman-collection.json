@@ -1,0 +1,633 @@
+{
+    "id": "41a97e48d3c9931beacef6e4a7cfb606",
+    "name": "REST TV Listings APIs",
+    "description": null,
+    "auth": null,
+    "events": null,
+    "variables": [],
+    "order": [],
+    "folders_order": [],
+    "folders": [],
+    "requests": [
+        {
+            "id": "edb82340fd85e67a2eeb2ee56349bdf2",
+            "name": "Returns a list of the television service offerings...",
+            "url": "http:\/\/api.rovicorp.com\/\/services\/postalcode\/{postalCode}\/info",
+            "description": "Returns a list of the television service offerings for an area. Fields in bold are required.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "postalCode",
+                    "description": "For the United States or Canada, a postal code. For other countries, specify 0 (zero).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "locale",
+                    "description": "Language and country code of the television service (case-sensitive).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "countrycode",
+                    "description": "Country served by the television service, stated as the upper-case, two-letter country code.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "msoid",
+                    "description": "ID of a specific cable or satellite operator. Returns information for just that operator. If you don't know the MSO ID for an operator, first request the list of services in an area and then look through the response for that operator.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "format",
+                    "description": "Format of the returned data",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "41a97e48d3c9931beacef6e4a7cfb606",
+            "rawModeData": ""
+        },
+        {
+            "id": "35cf37fec70c806ef4342856be417e63",
+            "name": "Returns the channel lineup offered by a television...",
+            "url": "http:\/\/api.rovicorp.com\/\/servicedetails\/serviceid\/{serviceId}\/info",
+            "description": "Returns the channel lineup offered by a television service, plus information about the source of programming on a channel. Fields in bold are required.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "serviceId",
+                    "description": "Service ID of the television service, for example: 360861. To get the service ID for a television service, request the list of services in the area with Services.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "locale",
+                    "description": "Language and country code of the television service (case-sensitive).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "includechannelimages",
+                    "description": "Include channel logos in the response.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "imageformatid",
+                    "description": "If you set includechannelimages to true, imageformatid determines the size and file format of channel logos returned in the response. Choose the ID from the Format ID table. For details, see the documentation of ServiceDetails in REST TV Listings.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "imagehorizontalresolution",
+                    "description": "If you set includechannelimages to true, imagehorizontalresolution determines the exact horizontal resolution of the images returned in the response (in pixels).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "imageverticalresolution",
+                    "description": "If you set includechannelimages to true, imageverticalresolution determines the exact vertical resolution of the images returned in the response (in pixels).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "format",
+                    "description": "Format of the returned data",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "41a97e48d3c9931beacef6e4a7cfb606",
+            "rawModeData": ""
+        },
+        {
+            "id": "de6188244af8ad6c3530bb4fdb11dec8",
+            "name": "Returns up to four hours of TV listings with infor...",
+            "url": "http:\/\/api.rovicorp.com\/\/gridschedule\/{serviceId}\/info",
+            "description": "Returns up to four hours of TV listings with information appropriate for the space limitations of a grid. Fields in bold are required.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "serviceId",
+                    "description": "Service ID of the television service, for example: 360861. To get the service ID for a television service, request the list of services in the area with Services.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "locale",
+                    "description": "Language and country code of the television service (case-sensitive).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "duration",
+                    "description": "Number of minutes of program schedule to return, from 1 to 240 minutes (4 hours).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "includechannelimages",
+                    "description": "Include channel logos in the response.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "imageformatid",
+                    "description": "If you set includechannelimages to true, imageformatid determines the size and file format of channel logos returned in the response. Choose the ID from the Format ID table. For details, see the documentation of ServiceDetails in REST TV Listings.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "sourceid",
+                    "description": "Channel sources to include on the schedule, specified as a comma-separated list. For details, see the documentation of GridSchedule in REST TV Listings.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "sourcefilterexclude",
+                    "description": "If you specify sourceid, sourcefilterexclude excludes certain types of channels from the listings: HD, PPV, Music (case-sensitive).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "sourcefilterinclude",
+                    "description": "If you specify sourceid, sourcefilterinclude includes certain types of channels in the listings: HD, PPV, Music (case-senstive).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "startdate",
+                    "description": "Beginning of the time period covered by the schedule, specified in a DateTime format. For details, see the documentation of GridSchedule in REST TV Listings.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "titletype",
+                    "description": "Type of title to return for each program. For details, see the documentation of GridSchedule in REST TV Listings.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "format",
+                    "description": "Format of the returned data",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "41a97e48d3c9931beacef6e4a7cfb606",
+            "rawModeData": ""
+        },
+        {
+            "id": "58f3c2b175960a5166aeddc138cee6df",
+            "name": "Returns up to four hours of TV listings with detai...",
+            "url": "http:\/\/api.rovicorp.com\/\/linearschedule\/{serviceId}\/info",
+            "description": "Returns up to four hours of TV listings with detailed program information. Fields in bold are required.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "serviceId",
+                    "description": "Service ID of the television service, for example: 360861. To get the service ID for a television service, request the list of services in the area with Services.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "locale",
+                    "description": "Language and country code of the television service (case-sensitive).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "duration",
+                    "description": "Number of minutes of program schedule to return, from 1 to 240 minutes (4 hours).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "inprogress",
+                    "description": "Whether shows in progress at the time specified for startdate are included in the schedule.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "oneairingpersourceid",
+                    "description": "Whether to return only the next show on each channel that is not in progress at the time specified by startdate. Note: Setting this parameter to true overrides the inprogress and duration parameters.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "sourceid",
+                    "description": "Channel sources to include on the schedule, specified as a comma-separated list. For details, see the documentation of GridSchedule in REST TV Listings.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "startdate",
+                    "description": "Beginning of the time period covered by the schedule, specified in a DateTime format. For details, see the documentation of GridSchedule in REST TV Listings.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "format",
+                    "description": "Format of the returned data",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "41a97e48d3c9931beacef6e4a7cfb606",
+            "rawModeData": ""
+        },
+        {
+            "id": "e237b73ff4b3cfaa6d8f028613af1c48",
+            "name": "Returns information about a series, movie, episode...",
+            "url": "http:\/\/api.rovicorp.com\/\/programdetails\/{serviceId}\/{programId}\/info",
+            "description": "Returns information about a series, movie, episode, or program, and can optionally include a schedule of upcoming broadcasts of the show. Fields in bold are required.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "programId",
+                    "description": "A series, episode, or program identifier. You can get program IDs from responses to GridSchedule or LinearSchedule.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "locale",
+                    "description": "Language and country code of the television service (case-sensitive).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "copytextformat",
+                    "description": "Format of the description of the program or movie.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "copytype",
+                    "description": "Type of description you want returned for the program or movie. For details, see the documentation of ProgramDetails in REST TV Listings.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "include",
+                    "description": "Data to include in the response: Award, Credit, Image, Keyword, Program, Seasons (case-senstive). To include multiple values, separate them with commas like this: include=Award,Credit,Image.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "imagecount",
+                    "description": "If you request Image in the include parameter, imagecount determines the number of images returned in the ProgramImages element.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "imageformat",
+                    "description": "If you request Image in the include parameter, imageformat specifies the file format of images returned in the ProgramImages element.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "imageformatid",
+                    "description": "If you set includechannelimages to true, imageformatid determines the size and file format of channel logos returned in the response. Choose the ID from the Format ID table. For details, see the documentation of ServiceDetails in REST TV Listings.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "imagetype",
+                    "description": "If you request Image in the include parameter, imagetype determines the type of images returned in the ProgramImages element. For details, see the documentation of ProgramDetails in REST TV Listings.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "imagehorizontalresolution",
+                    "description": "If you set includechannelimages to true, imagehorizontalresolution determines the exact horizontal resolution of the images returned in the response (in pixels).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "imageverticalresolution",
+                    "description": "If you set includechannelimages to true, imageverticalresolution determines the exact vertical resolution of the images returned in the response (in pixels).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "serviceId",
+                    "description": "Service ID of the television service, for example: 360861. To get the service ID for a television service, request the list of services in the area with Services.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "duration",
+                    "description": "Number of minutes of program schedule to return, from 1 to 240 minutes (4 hours).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "inprogress",
+                    "description": "Whether shows in progress at the time specified for startdate are included in the schedule.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "sourceid",
+                    "description": "Channel sources to include on the schedule, specified as a comma-separated list. For details, see the documentation of GridSchedule in REST TV Listings.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "startdate",
+                    "description": "Beginning of the time period covered by the schedule, specified in a DateTime format. For details, see the documentation of GridSchedule in REST TV Listings.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "pagesize",
+                    "description": "If you specify a serviceid to include a schedule of broadcasts of the show, pagesize specifies the maximum number of rows to be returned in the broadcast schedule. The default is 0, which returns all rows after the startindex.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "startindex",
+                    "description": "If you specify a serviceid to include a schedule of broadcasts of the show, startindex specifies the number of the first row you want, counting from zero as the first row in the schedule. Note: You can use startindex and pagesize to paginate the returned schedule.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "format",
+                    "description": "Format of the returned data",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "41a97e48d3c9931beacef6e4a7cfb606",
+            "rawModeData": ""
+        },
+        {
+            "id": "a9f1b28250858f08bf0b6be5ec0ec0d2",
+            "name": "Returns information about a celebrity and can opti...",
+            "url": "http:\/\/api.rovicorp.com\/\/celebritydetails\/info",
+            "description": "Returns information about a celebrity and can optionally include a schedule of upcoming broadcasts the celebrity appears in. Fields in bold are required.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "include",
+                    "description": "Data to include in the response: Award, Credit, Image, Keyword, Program, Seasons (case-senstive). To include multiple values, separate them with commas like this: include=Award,Credit,Image.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "locale",
+                    "description": "Language and country code of the television service (case-sensitive).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "nameid",
+                    "description": "Database ID of the celebrity. You can get celebrity IDs (Cosmo IDs) from responses to ProgramDetails with the include=Credit parameter or from Search requests with the credit entity type.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "copytextformat",
+                    "description": "Format of the description of the program or movie.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "copytype",
+                    "description": "Type of description you want returned for the program or movie. For details, see the documentation of ProgramDetails in REST TV Listings.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "includecreditsforepisodes",
+                    "description": "If you request Credits in the include parameter, includecreditsforepisodes determines whether credits for each episode in a series are returned in the response.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "imagecount",
+                    "description": "If you request Image in the include parameter, imagecount determines the number of images returned in the ProgramImages element.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "imageformat",
+                    "description": "If you request Image in the include parameter, imageformat specifies the file format of images returned in the ProgramImages element.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "imageformatid",
+                    "description": "If you set includechannelimages to true, imageformatid determines the size and file format of channel logos returned in the response. Choose the ID from the Format ID table. For details, see the documentation of ServiceDetails in REST TV Listings.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "imagetype",
+                    "description": "If you request Image in the include parameter, imagetype determines the type of images returned in the ProgramImages element. For details, see the documentation of ProgramDetails in REST TV Listings.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "imagehorizontalresolution",
+                    "description": "If you set includechannelimages to true, imagehorizontalresolution determines the exact horizontal resolution of the images returned in the response (in pixels).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "imageverticalresolution",
+                    "description": "If you set includechannelimages to true, imageverticalresolution determines the exact vertical resolution of the images returned in the response (in pixels).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "serviceid",
+                    "description": "The television service ID, for example: 360861. This must be specified if you want to return a schedule of upcoming broadcasts the celebrity appears in. To get the service ID for a television service, request the list of services in the area with Services.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "duration",
+                    "description": "Number of minutes of program schedule to return, from 1 to 240 minutes (4 hours).",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "inprogress",
+                    "description": "Whether shows in progress at the time specified for startdate are included in the schedule.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "sourceid",
+                    "description": "Channel sources to include on the schedule, specified as a comma-separated list. For details, see the documentation of GridSchedule in REST TV Listings.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "startdate",
+                    "description": "Beginning of the time period covered by the schedule, specified in a DateTime format. For details, see the documentation of GridSchedule in REST TV Listings.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "format",
+                    "description": "Format of the returned data",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "41a97e48d3c9931beacef6e4a7cfb606",
+            "rawModeData": ""
+        }
+    ]
+}
