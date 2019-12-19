@@ -1,0 +1,95 @@
+{
+    "name": "Rovi",
+    "description": "TiVo is a pioneer in DVRs | Buy TiVo BOLT, Roamio, and Mini | Free shipping | Integrate all streaming apps into TV | Start your free trial today!",
+    "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/648-rovi.jpg",
+    "tags": [
+        "entertainment",
+        "have api",
+        "have swagger",
+        "music",
+        "new",
+        "recommendations",
+        "videos"
+    ],
+    "created": "2019-12-19",
+    "modified": "2019-12-19",
+    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/rovi\/master\/apis.json",
+    "specificationVersion": "0.14",
+    "apis": [
+        {
+            "name": "Rovi",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/648-rovi.jpg",
+            "humanURL": "http:\/\/developer.rovicorp.com\/",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/rovi-openapi.json"
+                },
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/rovi.json"
+                }
+            ]
+        },
+        {
+            "name": "REST TV Listings APIs",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/648-rovi.jpg",
+            "humanURL": "http:\/\/developer.rovicorp.com\/",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/rest-tv-listings-apis-openapi.json"
+                },
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/rest-tv-listings-apis.json"
+                }
+            ]
+        }
+    ],
+    "include": [],
+    "x-common": [
+        {
+            "type": "Website",
+            "url": "http:\/\/developer.rovicorp.com\/"
+        },
+        {
+            "type": "Blog",
+            "url": "http:\/\/blog.rovicorp.com"
+        },
+        {
+            "type": "Blog RSS",
+            "url": "http:\/\/developer.rovicorp.com\/blog\/feed-entries"
+        },
+        {
+            "type": "Crunchbase",
+            "url": "https:\/\/crunchbase.com\/organization\/tivo"
+        },
+        {
+            "type": "Crunchbase",
+            "url": "http:\/\/www.crunchbase.com\/company\/rovi"
+        },
+        {
+            "type": "Github",
+            "url": "https:\/\/github.com\/Rovi"
+        },
+        {
+            "type": "Swagger",
+            "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-definitions\/swagger\/648-2019-09-04-09-59-37.json"
+        },
+        {
+            "type": "Twitter",
+            "url": "https:\/\/twitter.com\/TiVo"
+        },
+        {
+            "type": "Twitter",
+            "url": "https:\/\/twitter.com\/#!\/RoviCorp"
+        }
+    ]
+}
