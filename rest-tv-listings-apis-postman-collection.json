@@ -1,5 +1,5 @@
 {
-    "id": "41a97e48d3c9931beacef6e4a7cfb606",
+    "id": "ec69a4fdbf89cd7f488248df94420c21",
     "name": "REST TV Listings APIs",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "edb82340fd85e67a2eeb2ee56349bdf2",
+            "id": "c5d12eee7b894e06687004e7bd382457",
             "name": "Returns a list of the television service offerings...",
             "url": "http:\/\/api.rovicorp.com\/\/services\/postalcode\/{postalCode}\/info",
             "description": "Returns a list of the television service offerings for an area. Fields in bold are required.",
@@ -65,11 +65,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "41a97e48d3c9931beacef6e4a7cfb606",
+            "collectionId": "ec69a4fdbf89cd7f488248df94420c21",
             "rawModeData": ""
         },
         {
-            "id": "35cf37fec70c806ef4342856be417e63",
+            "id": "db6ba18a8efbd3abe9389e8f8e6ed990",
             "name": "Returns the channel lineup offered by a television...",
             "url": "http:\/\/api.rovicorp.com\/\/servicedetails\/serviceid\/{serviceId}\/info",
             "description": "Returns the channel lineup offered by a television service, plus information about the source of programming on a channel. Fields in bold are required.",
@@ -138,11 +138,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "41a97e48d3c9931beacef6e4a7cfb606",
+            "collectionId": "ec69a4fdbf89cd7f488248df94420c21",
             "rawModeData": ""
         },
         {
-            "id": "de6188244af8ad6c3530bb4fdb11dec8",
+            "id": "f8f681f29fd81eceefd0b1510ac5254f",
             "name": "Returns up to four hours of TV listings with infor...",
             "url": "http:\/\/api.rovicorp.com\/\/gridschedule\/{serviceId}\/info",
             "description": "Returns up to four hours of TV listings with information appropriate for the space limitations of a grid. Fields in bold are required.",
@@ -239,11 +239,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "41a97e48d3c9931beacef6e4a7cfb606",
+            "collectionId": "ec69a4fdbf89cd7f488248df94420c21",
             "rawModeData": ""
         },
         {
-            "id": "58f3c2b175960a5166aeddc138cee6df",
+            "id": "a8118c395ed09886574fc575f403cc2b",
             "name": "Returns up to four hours of TV listings with detai...",
             "url": "http:\/\/api.rovicorp.com\/\/linearschedule\/{serviceId}\/info",
             "description": "Returns up to four hours of TV listings with detailed program information. Fields in bold are required.",
@@ -319,11 +319,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "41a97e48d3c9931beacef6e4a7cfb606",
+            "collectionId": "ec69a4fdbf89cd7f488248df94420c21",
             "rawModeData": ""
         },
         {
-            "id": "e237b73ff4b3cfaa6d8f028613af1c48",
+            "id": "388e530b697cb774f56e919848aef1ba",
             "name": "Returns information about a series, movie, episode...",
             "url": "http:\/\/api.rovicorp.com\/\/programdetails\/{serviceId}\/{programId}\/info",
             "description": "Returns information about a series, movie, episode, or program, and can optionally include a schedule of upcoming broadcasts of the show. Fields in bold are required.",
@@ -476,11 +476,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "41a97e48d3c9931beacef6e4a7cfb606",
+            "collectionId": "ec69a4fdbf89cd7f488248df94420c21",
             "rawModeData": ""
         },
         {
-            "id": "a9f1b28250858f08bf0b6be5ec0ec0d2",
+            "id": "8ca7749b00d077e82e65cf663edf03a7",
             "name": "Returns information about a celebrity and can opti...",
             "url": "http:\/\/api.rovicorp.com\/\/celebritydetails\/info",
             "description": "Returns information about a celebrity and can optionally include a schedule of upcoming broadcasts the celebrity appears in. Fields in bold are required.",
@@ -626,7 +626,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "41a97e48d3c9931beacef6e4a7cfb606",
+            "collectionId": "ec69a4fdbf89cd7f488248df94420c21",
             "rawModeData": ""
         }
     ]
